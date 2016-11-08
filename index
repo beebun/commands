@@ -1,2 +1,10 @@
 # Run bash in container
 `docker exec -it [container-name] bash`
+
+# Get all container information
+`docker inspect [container-name]`
+
+# Start Docker daemon in debugging mode
+1) `sudo vi /etc/default/docker` # open Docker config file
+2) add (or replace) this line `DOCKER_OPTS="-d --log-level=debug"`
+3) `sudo service docker restart`
