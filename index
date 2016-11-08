@@ -1,0 +1,2 @@
+# Run bash in container
+`docker exec -it [container-name] bash`
